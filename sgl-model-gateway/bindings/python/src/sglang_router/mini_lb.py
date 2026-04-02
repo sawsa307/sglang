@@ -270,8 +270,8 @@ async def flush_cache():
 
 
 # TODO: Remove `/get_server_info` alias after one release-cycle deprecation window.
-@app.get("/get_server_info")
 @app.get("/server_info")
+@app.get("/get_server_info")
 async def get_server_info():
     prefill_infos = []
     decode_infos = []
